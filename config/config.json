@@ -1,0 +1,21 @@
+{ 
+       
+        "charge_use" : "Data/Charges_use.csv",
+        "damages_use" : "Data/Damages_use.csv",
+        "endorse_use" : "Data/Endorse_use.csv",
+        "primary_person_use" : "Data/Primary_Person_use.csv",
+        "restrict_use" : "Data/Restrict_use.csv",
+        "units_use" : "Data/Units_use.csv",
+        "output_file_path" : {
+        "count_male"  : "output/count_male_crash.csv",
+        "count_2_wheeler_crash"  : "output/count_2_wheeler_crash.csv",
+        "state_with_highest_female_accident"  : "output/state_with_highest_female_accident.csv",
+        "top_vehicle_contributing_to_injuries"  : "output/top_vehicle_contributing_to_injuries.csv",
+        "top_ethnic_user_group_crash_for_each_body_style"  : "output/count_2_wheeler_crash.csv",
+        "top_5_zip_codes_with_alcohols_as_reason_for_crash"  : "output/top_5_zip_codes_with_alcohols_as_reason_for_crash.csv",
+        "crash_ids_with_no_damage"  : "output/count_2_wheeler_crash.csv",
+        "top_5_vehicle_brand"  : "output/top_5_vehicle_brand.csv"
+      }
+}
+  
+

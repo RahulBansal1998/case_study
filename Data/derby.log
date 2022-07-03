@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Jul 03 14:16:25 IST 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0181-c33d-53cc-000034c6bf70 
+on database directory /home/rahul/bcg/assignment/Big Data Case study/Data/metastore_db with class loader sun.misc.Launcher$AppClassLoader@135fbaa4 
+Loaded from file:/home/rahul/anaconda3/lib/python3.7/site-packages/pyspark/jars/derby-10.12.1.1.jar
+java.vendor=Azul Systems, Inc.
+java.runtime.version=1.8.0_332-b09
+user.dir=/home/rahul/bcg/assignment/Big Data Case study/Data
+os.name=Linux
+os.arch=amd64
+os.version=4.15.0-180-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

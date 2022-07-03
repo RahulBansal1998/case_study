@@ -1,0 +1,1081 @@
+2022-07-04 03:35:15 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Arguuments : Namespace(config='config/config.json', key='count_male')
+2022-07-04 03:35:16 INFO  SparkContext:54 - Running Spark version 2.4.0
+2022-07-04 03:35:16 INFO  SparkContext:54 - Submitted application: vehicle_accident_analysis_results
+2022-07-04 03:35:16 INFO  SecurityManager:54 - Changing view acls to: rahul
+2022-07-04 03:35:16 INFO  SecurityManager:54 - Changing modify acls to: rahul
+2022-07-04 03:35:16 INFO  SecurityManager:54 - Changing view acls groups to: 
+2022-07-04 03:35:16 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2022-07-04 03:35:16 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(rahul); groups with view permissions: Set(); users  with modify permissions: Set(rahul); groups with modify permissions: Set()
+2022-07-04 03:35:16 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 39699.
+2022-07-04 03:35:17 INFO  SparkEnv:54 - Registering MapOutputTracker
+2022-07-04 03:35:17 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2022-07-04 03:35:17 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2022-07-04 03:35:17 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2022-07-04 03:35:17 INFO  DiskBlockManager:54 - Created local directory at /tmp/blockmgr-95b24462-07aa-446c-b71e-f362141a7387
+2022-07-04 03:35:17 INFO  MemoryStore:54 - MemoryStore started with capacity 366.3 MB
+2022-07-04 03:35:17 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2022-07-04 03:35:17 INFO  log:192 - Logging initialized @2526ms
+2022-07-04 03:35:17 INFO  Server:351 - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+2022-07-04 03:35:17 INFO  Server:419 - Started @2636ms
+2022-07-04 03:35:17 WARN  Utils:66 - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2022-07-04 03:35:17 INFO  AbstractConnector:278 - Started ServerConnector@159e5d62{HTTP/1.1,[http/1.1]}{0.0.0.0:4041}
+2022-07-04 03:35:17 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4041.
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6fe4f5cf{/jobs,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@f3f26b7{/jobs/json,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5611a97d{/jobs/job,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7d344da1{/jobs/job/json,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@bc8c62e{/stages,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5049dc6b{/stages/json,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@e9f38a4{/stages/stage,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2194d52{/stages/stage/json,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@75b41fad{/stages/pool,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6d991935{/stages/pool/json,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1ac2881e{/storage,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@52f935c9{/storage/json,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@765114c{/storage/rdd,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2210f024{/storage/rdd/json,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2c1c0e00{/environment,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@37503137{/environment/json,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1890b9e0{/executors,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3da4eb06{/executors/json,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@71848ebc{/executors/threadDump,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@476bd032{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5a293e86{/static,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@383c973{/,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4d8c0a2d{/api,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1edecf5d{/jobs/job/kill,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@78a8657f{/stages/stage/kill,null,AVAILABLE,@Spark}
+2022-07-04 03:35:17 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://192.168.1.10:4041
+2022-07-04 03:35:17 INFO  Executor:54 - Starting executor ID driver on host localhost
+2022-07-04 03:35:17 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37137.
+2022-07-04 03:35:17 INFO  NettyBlockTransferService:54 - Server created on 192.168.1.10:37137
+2022-07-04 03:35:17 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2022-07-04 03:35:17 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, 192.168.1.10, 37137, None)
+2022-07-04 03:35:17 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 192.168.1.10:37137 with 366.3 MB RAM, BlockManagerId(driver, 192.168.1.10, 37137, None)
+2022-07-04 03:35:17 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, 192.168.1.10, 37137, None)
+2022-07-04 03:35:17 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, 192.168.1.10, 37137, None)
+2022-07-04 03:35:17 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@365416ec{/metrics/json,null,AVAILABLE,@Spark}
+2022-07-04 03:35:18 INFO  SharedState:54 - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/rahul/bcg/Case_study/spark-warehouse').
+2022-07-04 03:35:18 INFO  SharedState:54 - Warehouse path is 'file:/home/rahul/bcg/Case_study/spark-warehouse'.
+2022-07-04 03:35:18 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3c12dba3{/SQL,null,AVAILABLE,@Spark}
+2022-07-04 03:35:18 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@f830524{/SQL/json,null,AVAILABLE,@Spark}
+2022-07-04 03:35:18 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@ec35dc1{/SQL/execution,null,AVAILABLE,@Spark}
+2022-07-04 03:35:18 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@64a4bd0d{/SQL/execution/json,null,AVAILABLE,@Spark}
+2022-07-04 03:35:18 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@543fb3f6{/static/sql,null,AVAILABLE,@Spark}
+2022-07-04 03:35:18 INFO  StateStoreCoordinatorRef:54 - Registered StateStoreCoordinator endpoint
+Config File : {'charge_use': 'Data/Charges_use.csv', 'damages_use': 'Data/Damages_use.csv', 'endorse_use': 'Data/Endorse_use.csv', 'primary_person_use': 'Data/Primary_Person_use.csv', 'restrict_use': 'Data/Restrict_use.csv', 'units_use': 'Data/Units_use.csv', 'output_file_path': {'count_male': 'output/count_male_crash.csv', 'count_2_wheeler_crash': 'output/count_2_wheeler_crash.csv', 'state_with_highest_female_accident': 'output/state_with_highest_female_accident.csv', 'top_vehicle_contributing_to_injuries': 'output/top_vehicle_contributing_to_injuries.csv', 'top_ethnic_user_group_crash_for_each_body_style': 'output/count_2_wheeler_crash.csv', 'top_5_zip_codes_with_alcohols_as_reason_for_crash': 'output/top_5_zip_codes_with_alcohols_as_reason_for_crash.csv', 'crash_ids_with_no_damage': 'output/count_2_wheeler_crash.csv', 'top_5_vehicle_brand': 'output/top_5_vehicle_brand.csv'}}
+2022-07-04 03:35:22 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2022-07-04 03:35:22 INFO  FileSourceStrategy:54 - Post-Scan Filters: (length(trim(value#0, None)) > 0)
+2022-07-04 03:35:22 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2022-07-04 03:35:22 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2022-07-04 03:35:22 INFO  CodeGenerator:54 - Code generated in 281.314008 ms
+2022-07-04 03:35:22 INFO  CodeGenerator:54 - Code generated in 24.920549 ms
+2022-07-04 03:35:23 INFO  MemoryStore:54 - Block broadcast_0 stored as values in memory (estimated size 283.7 KB, free 366.0 MB)
+2022-07-04 03:35:23 INFO  MemoryStore:54 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 23.3 KB, free 366.0 MB)
+2022-07-04 03:35:23 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 192.168.1.10:37137 (size: 23.3 KB, free: 366.3 MB)
+2022-07-04 03:35:23 INFO  SparkContext:54 - Created broadcast 0 from load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:23 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 5168134 bytes, open cost is considered as scanning 4194304 bytes.
+2022-07-04 03:35:23 INFO  SparkContext:54 - Starting job: load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:23 INFO  DAGScheduler:54 - Got job 0 (load at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2022-07-04 03:35:23 INFO  DAGScheduler:54 - Final stage: ResultStage 0 (load at NativeMethodAccessorImpl.java:0)
+2022-07-04 03:35:23 INFO  DAGScheduler:54 - Parents of final stage: List()
+2022-07-04 03:35:23 INFO  DAGScheduler:54 - Missing parents: List()
+2022-07-04 03:35:23 INFO  DAGScheduler:54 - Submitting ResultStage 0 (MapPartitionsRDD[3] at load at NativeMethodAccessorImpl.java:0), which has no missing parents
+2022-07-04 03:35:23 INFO  MemoryStore:54 - Block broadcast_1 stored as values in memory (estimated size 8.8 KB, free 366.0 MB)
+2022-07-04 03:35:23 INFO  MemoryStore:54 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.5 KB, free 366.0 MB)
+2022-07-04 03:35:23 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on 192.168.1.10:37137 (size: 4.5 KB, free: 366.3 MB)
+2022-07-04 03:35:23 INFO  SparkContext:54 - Created broadcast 1 from broadcast at DAGScheduler.scala:1161
+2022-07-04 03:35:23 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at load at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2022-07-04 03:35:23 INFO  TaskSchedulerImpl:54 - Adding task set 0.0 with 1 tasks
+2022-07-04 03:35:23 INFO  TaskSetManager:54 - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 8332 bytes)
+2022-07-04 03:35:23 INFO  Executor:54 - Running task 0.0 in stage 0.0 (TID 0)
+2022-07-04 03:35:23 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Charges_use.csv, range: 0-5168134, partition values: [empty row]
+2022-07-04 03:35:23 INFO  CodeGenerator:54 - Code generated in 17.332877 ms
+2022-07-04 03:35:23 INFO  Executor:54 - Finished task 0.0 in stage 0.0 (TID 0). 1355 bytes result sent to driver
+2022-07-04 03:35:23 INFO  TaskSetManager:54 - Finished task 0.0 in stage 0.0 (TID 0) in 222 ms on localhost (executor driver) (1/1)
+2022-07-04 03:35:23 INFO  TaskSchedulerImpl:54 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2022-07-04 03:35:23 INFO  DAGScheduler:54 - ResultStage 0 (load at NativeMethodAccessorImpl.java:0) finished in 0.360 s
+2022-07-04 03:35:23 INFO  DAGScheduler:54 - Job 0 finished: load at NativeMethodAccessorImpl.java:0, took 0.414650 s
+2022-07-04 03:35:23 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2022-07-04 03:35:23 INFO  FileSourceStrategy:54 - Post-Scan Filters: 
+2022-07-04 03:35:23 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2022-07-04 03:35:23 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2022-07-04 03:35:23 INFO  CodeGenerator:54 - Code generated in 17.272771 ms
+2022-07-04 03:35:24 INFO  MemoryStore:54 - Block broadcast_2 stored as values in memory (estimated size 283.7 KB, free 365.7 MB)
+2022-07-04 03:35:24 INFO  MemoryStore:54 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 23.3 KB, free 365.7 MB)
+2022-07-04 03:35:24 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on 192.168.1.10:37137 (size: 23.3 KB, free: 366.3 MB)
+2022-07-04 03:35:24 INFO  SparkContext:54 - Created broadcast 2 from load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:24 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 5168134 bytes, open cost is considered as scanning 4194304 bytes.
+2022-07-04 03:35:24 INFO  SparkContext:54 - Starting job: load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:24 INFO  DAGScheduler:54 - Got job 1 (load at NativeMethodAccessorImpl.java:0) with 4 output partitions
+2022-07-04 03:35:24 INFO  DAGScheduler:54 - Final stage: ResultStage 1 (load at NativeMethodAccessorImpl.java:0)
+2022-07-04 03:35:24 INFO  DAGScheduler:54 - Parents of final stage: List()
+2022-07-04 03:35:24 INFO  DAGScheduler:54 - Missing parents: List()
+2022-07-04 03:35:24 INFO  DAGScheduler:54 - Submitting ResultStage 1 (MapPartitionsRDD[8] at load at NativeMethodAccessorImpl.java:0), which has no missing parents
+2022-07-04 03:35:24 INFO  MemoryStore:54 - Block broadcast_3 stored as values in memory (estimated size 13.2 KB, free 365.7 MB)
+2022-07-04 03:35:24 INFO  MemoryStore:54 - Block broadcast_3_piece0 stored as bytes in memory (estimated size 7.2 KB, free 365.7 MB)
+2022-07-04 03:35:24 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on 192.168.1.10:37137 (size: 7.2 KB, free: 366.2 MB)
+2022-07-04 03:35:24 INFO  SparkContext:54 - Created broadcast 3 from broadcast at DAGScheduler.scala:1161
+2022-07-04 03:35:24 INFO  DAGScheduler:54 - Submitting 4 missing tasks from ResultStage 1 (MapPartitionsRDD[8] at load at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+2022-07-04 03:35:24 INFO  TaskSchedulerImpl:54 - Adding task set 1.0 with 4 tasks
+2022-07-04 03:35:24 INFO  TaskSetManager:54 - Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, PROCESS_LOCAL, 8332 bytes)
+2022-07-04 03:35:24 INFO  TaskSetManager:54 - Starting task 1.0 in stage 1.0 (TID 2, localhost, executor driver, partition 1, PROCESS_LOCAL, 8332 bytes)
+2022-07-04 03:35:24 INFO  TaskSetManager:54 - Starting task 2.0 in stage 1.0 (TID 3, localhost, executor driver, partition 2, PROCESS_LOCAL, 8332 bytes)
+2022-07-04 03:35:24 INFO  TaskSetManager:54 - Starting task 3.0 in stage 1.0 (TID 4, localhost, executor driver, partition 3, PROCESS_LOCAL, 8332 bytes)
+2022-07-04 03:35:24 INFO  Executor:54 - Running task 0.0 in stage 1.0 (TID 1)
+2022-07-04 03:35:24 INFO  Executor:54 - Running task 2.0 in stage 1.0 (TID 3)
+2022-07-04 03:35:24 INFO  Executor:54 - Running task 1.0 in stage 1.0 (TID 2)
+2022-07-04 03:35:24 INFO  Executor:54 - Running task 3.0 in stage 1.0 (TID 4)
+2022-07-04 03:35:24 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Charges_use.csv, range: 0-5168134, partition values: [empty row]
+2022-07-04 03:35:24 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Charges_use.csv, range: 0-5168134, partition values: [empty row]
+2022-07-04 03:35:24 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Charges_use.csv, range: 5168134-6141964, partition values: [empty row]
+2022-07-04 03:35:24 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Charges_use.csv, range: 5168134-6141964, partition values: [empty row]
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 14
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 15
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 31
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 28
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 22
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 21
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 25
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 27
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 26
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 19
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 18
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 8
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 29
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 11
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 13
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 16
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 30
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 7
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 12
+2022-07-04 03:35:24 INFO  BlockManagerInfo:54 - Removed broadcast_1_piece0 on 192.168.1.10:37137 in memory (size: 4.5 KB, free: 366.2 MB)
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 17
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 24
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 9
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 20
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 23
+2022-07-04 03:35:24 INFO  ContextCleaner:54 - Cleaned accumulator 10
+2022-07-04 03:35:24 INFO  Executor:54 - Finished task 3.0 in stage 1.0 (TID 4). 1625 bytes result sent to driver
+2022-07-04 03:35:24 INFO  TaskSetManager:54 - Finished task 3.0 in stage 1.0 (TID 4) in 639 ms on localhost (executor driver) (1/4)
+2022-07-04 03:35:24 INFO  Executor:54 - Finished task 2.0 in stage 1.0 (TID 3). 1582 bytes result sent to driver
+2022-07-04 03:35:24 INFO  TaskSetManager:54 - Finished task 2.0 in stage 1.0 (TID 3) in 708 ms on localhost (executor driver) (2/4)
+2022-07-04 03:35:25 INFO  Executor:54 - Finished task 1.0 in stage 1.0 (TID 2). 1582 bytes result sent to driver
+2022-07-04 03:35:25 INFO  Executor:54 - Finished task 0.0 in stage 1.0 (TID 1). 1582 bytes result sent to driver
+2022-07-04 03:35:25 INFO  TaskSetManager:54 - Finished task 1.0 in stage 1.0 (TID 2) in 1034 ms on localhost (executor driver) (3/4)
+2022-07-04 03:35:25 INFO  TaskSetManager:54 - Finished task 0.0 in stage 1.0 (TID 1) in 1035 ms on localhost (executor driver) (4/4)
+2022-07-04 03:35:25 INFO  TaskSchedulerImpl:54 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2022-07-04 03:35:25 INFO  DAGScheduler:54 - ResultStage 1 (load at NativeMethodAccessorImpl.java:0) finished in 1.066 s
+2022-07-04 03:35:25 INFO  DAGScheduler:54 - Job 1 finished: load at NativeMethodAccessorImpl.java:0, took 1.073022 s
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 52
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 42
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 50
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 44
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 39
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 51
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 57
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 37
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 59
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 48
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 56
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 41
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 61
+2022-07-04 03:35:25 INFO  BlockManagerInfo:54 - Removed broadcast_3_piece0 on 192.168.1.10:37137 in memory (size: 7.2 KB, free: 366.3 MB)
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 49
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 43
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 45
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 38
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 54
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 58
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 60
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 40
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 53
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 55
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 46
+2022-07-04 03:35:25 INFO  ContextCleaner:54 - Cleaned accumulator 47
+2022-07-04 03:35:25 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2022-07-04 03:35:25 INFO  FileSourceStrategy:54 - Post-Scan Filters: (length(trim(value#20, None)) > 0)
+2022-07-04 03:35:25 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2022-07-04 03:35:25 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2022-07-04 03:35:25 INFO  MemoryStore:54 - Block broadcast_4 stored as values in memory (estimated size 283.7 KB, free 365.4 MB)
+2022-07-04 03:35:25 INFO  MemoryStore:54 - Block broadcast_4_piece0 stored as bytes in memory (estimated size 23.3 KB, free 365.4 MB)
+2022-07-04 03:35:25 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 192.168.1.10:37137 (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:25 INFO  SparkContext:54 - Created broadcast 4 from load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:25 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2022-07-04 03:35:25 INFO  SparkContext:54 - Starting job: load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:25 INFO  DAGScheduler:54 - Got job 2 (load at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2022-07-04 03:35:25 INFO  DAGScheduler:54 - Final stage: ResultStage 2 (load at NativeMethodAccessorImpl.java:0)
+2022-07-04 03:35:25 INFO  DAGScheduler:54 - Parents of final stage: List()
+2022-07-04 03:35:25 INFO  DAGScheduler:54 - Missing parents: List()
+2022-07-04 03:35:25 INFO  DAGScheduler:54 - Submitting ResultStage 2 (MapPartitionsRDD[12] at load at NativeMethodAccessorImpl.java:0), which has no missing parents
+2022-07-04 03:35:25 INFO  MemoryStore:54 - Block broadcast_5 stored as values in memory (estimated size 8.8 KB, free 365.4 MB)
+2022-07-04 03:35:25 INFO  MemoryStore:54 - Block broadcast_5_piece0 stored as bytes in memory (estimated size 4.5 KB, free 365.4 MB)
+2022-07-04 03:35:25 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 192.168.1.10:37137 (size: 4.5 KB, free: 366.2 MB)
+2022-07-04 03:35:25 INFO  SparkContext:54 - Created broadcast 5 from broadcast at DAGScheduler.scala:1161
+2022-07-04 03:35:25 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[12] at load at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2022-07-04 03:35:25 INFO  TaskSchedulerImpl:54 - Adding task set 2.0 with 1 tasks
+2022-07-04 03:35:25 INFO  TaskSetManager:54 - Starting task 0.0 in stage 2.0 (TID 5, localhost, executor driver, partition 0, PROCESS_LOCAL, 8332 bytes)
+2022-07-04 03:35:25 INFO  Executor:54 - Running task 0.0 in stage 2.0 (TID 5)
+2022-07-04 03:35:25 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Damages_use.csv, range: 0-715274, partition values: [empty row]
+2022-07-04 03:35:25 INFO  Executor:54 - Finished task 0.0 in stage 2.0 (TID 5). 1291 bytes result sent to driver
+2022-07-04 03:35:25 INFO  TaskSetManager:54 - Finished task 0.0 in stage 2.0 (TID 5) in 14 ms on localhost (executor driver) (1/1)
+2022-07-04 03:35:25 INFO  TaskSchedulerImpl:54 - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2022-07-04 03:35:25 INFO  DAGScheduler:54 - ResultStage 2 (load at NativeMethodAccessorImpl.java:0) finished in 0.027 s
+2022-07-04 03:35:25 INFO  DAGScheduler:54 - Job 2 finished: load at NativeMethodAccessorImpl.java:0, took 0.036263 s
+2022-07-04 03:35:25 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2022-07-04 03:35:25 INFO  FileSourceStrategy:54 - Post-Scan Filters: 
+2022-07-04 03:35:25 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2022-07-04 03:35:25 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2022-07-04 03:35:25 INFO  MemoryStore:54 - Block broadcast_6 stored as values in memory (estimated size 283.7 KB, free 365.1 MB)
+2022-07-04 03:35:25 INFO  MemoryStore:54 - Block broadcast_6_piece0 stored as bytes in memory (estimated size 23.3 KB, free 365.1 MB)
+2022-07-04 03:35:25 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 192.168.1.10:37137 (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:25 INFO  SparkContext:54 - Created broadcast 6 from load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:25 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2022-07-04 03:35:25 INFO  SparkContext:54 - Starting job: load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:25 INFO  DAGScheduler:54 - Got job 3 (load at NativeMethodAccessorImpl.java:0) with 2 output partitions
+2022-07-04 03:35:25 INFO  DAGScheduler:54 - Final stage: ResultStage 3 (load at NativeMethodAccessorImpl.java:0)
+2022-07-04 03:35:25 INFO  DAGScheduler:54 - Parents of final stage: List()
+2022-07-04 03:35:25 INFO  DAGScheduler:54 - Missing parents: List()
+2022-07-04 03:35:25 INFO  DAGScheduler:54 - Submitting ResultStage 3 (MapPartitionsRDD[17] at load at NativeMethodAccessorImpl.java:0), which has no missing parents
+2022-07-04 03:35:25 INFO  MemoryStore:54 - Block broadcast_7 stored as values in memory (estimated size 13.2 KB, free 365.1 MB)
+2022-07-04 03:35:25 INFO  MemoryStore:54 - Block broadcast_7_piece0 stored as bytes in memory (estimated size 7.2 KB, free 365.1 MB)
+2022-07-04 03:35:25 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 192.168.1.10:37137 (size: 7.2 KB, free: 366.2 MB)
+2022-07-04 03:35:25 INFO  SparkContext:54 - Created broadcast 7 from broadcast at DAGScheduler.scala:1161
+2022-07-04 03:35:25 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 3 (MapPartitionsRDD[17] at load at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1))
+2022-07-04 03:35:25 INFO  TaskSchedulerImpl:54 - Adding task set 3.0 with 2 tasks
+2022-07-04 03:35:25 INFO  TaskSetManager:54 - Starting task 0.0 in stage 3.0 (TID 6, localhost, executor driver, partition 0, PROCESS_LOCAL, 8332 bytes)
+2022-07-04 03:35:25 INFO  TaskSetManager:54 - Starting task 1.0 in stage 3.0 (TID 7, localhost, executor driver, partition 1, PROCESS_LOCAL, 8332 bytes)
+2022-07-04 03:35:25 INFO  Executor:54 - Running task 1.0 in stage 3.0 (TID 7)
+2022-07-04 03:35:25 INFO  Executor:54 - Running task 0.0 in stage 3.0 (TID 6)
+2022-07-04 03:35:25 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Damages_use.csv, range: 0-715274, partition values: [empty row]
+2022-07-04 03:35:25 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Damages_use.csv, range: 0-715274, partition values: [empty row]
+2022-07-04 03:35:26 INFO  Executor:54 - Finished task 0.0 in stage 3.0 (TID 6). 1524 bytes result sent to driver
+2022-07-04 03:35:26 INFO  TaskSetManager:54 - Finished task 0.0 in stage 3.0 (TID 6) in 242 ms on localhost (executor driver) (1/2)
+2022-07-04 03:35:26 INFO  Executor:54 - Finished task 1.0 in stage 3.0 (TID 7). 1524 bytes result sent to driver
+2022-07-04 03:35:26 INFO  TaskSetManager:54 - Finished task 1.0 in stage 3.0 (TID 7) in 259 ms on localhost (executor driver) (2/2)
+2022-07-04 03:35:26 INFO  TaskSchedulerImpl:54 - Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2022-07-04 03:35:26 INFO  DAGScheduler:54 - ResultStage 3 (load at NativeMethodAccessorImpl.java:0) finished in 0.274 s
+2022-07-04 03:35:26 INFO  DAGScheduler:54 - Job 3 finished: load at NativeMethodAccessorImpl.java:0, took 0.279400 s
+2022-07-04 03:35:26 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2022-07-04 03:35:26 INFO  FileSourceStrategy:54 - Post-Scan Filters: (length(trim(value#34, None)) > 0)
+2022-07-04 03:35:26 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2022-07-04 03:35:26 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2022-07-04 03:35:26 INFO  MemoryStore:54 - Block broadcast_8 stored as values in memory (estimated size 283.7 KB, free 364.8 MB)
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 69
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 102
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 100
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 96
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 70
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 67
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 89
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 110
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 91
+2022-07-04 03:35:26 INFO  BlockManagerInfo:54 - Removed broadcast_7_piece0 on 192.168.1.10:37137 in memory (size: 7.2 KB, free: 366.2 MB)
+2022-07-04 03:35:26 INFO  MemoryStore:54 - Block broadcast_8_piece0 stored as bytes in memory (estimated size 23.3 KB, free 364.8 MB)
+2022-07-04 03:35:26 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 192.168.1.10:37137 (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:26 INFO  SparkContext:54 - Created broadcast 8 from load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:26 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 106
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 79
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 121
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 80
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 115
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 118
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 122
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 63
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 76
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 65
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 116
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 66
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 109
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 94
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 84
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 82
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 83
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 98
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 85
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 86
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 88
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 108
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 95
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 78
+2022-07-04 03:35:26 INFO  BlockManagerInfo:54 - Removed broadcast_6_piece0 on 192.168.1.10:37137 in memory (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 87
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 99
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 73
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 117
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 93
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 71
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 112
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 97
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 74
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 75
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 101
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 120
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 104
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 62
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 119
+2022-07-04 03:35:26 INFO  SparkContext:54 - Starting job: load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:26 INFO  DAGScheduler:54 - Got job 4 (load at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2022-07-04 03:35:26 INFO  DAGScheduler:54 - Final stage: ResultStage 4 (load at NativeMethodAccessorImpl.java:0)
+2022-07-04 03:35:26 INFO  DAGScheduler:54 - Parents of final stage: List()
+2022-07-04 03:35:26 INFO  DAGScheduler:54 - Missing parents: List()
+2022-07-04 03:35:26 INFO  DAGScheduler:54 - Submitting ResultStage 4 (MapPartitionsRDD[21] at load at NativeMethodAccessorImpl.java:0), which has no missing parents
+2022-07-04 03:35:26 INFO  MemoryStore:54 - Block broadcast_9 stored as values in memory (estimated size 8.8 KB, free 365.1 MB)
+2022-07-04 03:35:26 INFO  MemoryStore:54 - Block broadcast_9_piece0 stored as bytes in memory (estimated size 4.5 KB, free 365.1 MB)
+2022-07-04 03:35:26 INFO  BlockManagerInfo:54 - Added broadcast_9_piece0 in memory on 192.168.1.10:37137 (size: 4.5 KB, free: 366.2 MB)
+2022-07-04 03:35:26 INFO  SparkContext:54 - Created broadcast 9 from broadcast at DAGScheduler.scala:1161
+2022-07-04 03:35:26 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[21] at load at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2022-07-04 03:35:26 INFO  TaskSchedulerImpl:54 - Adding task set 4.0 with 1 tasks
+2022-07-04 03:35:26 INFO  TaskSetManager:54 - Starting task 0.0 in stage 4.0 (TID 8, localhost, executor driver, partition 0, PROCESS_LOCAL, 8332 bytes)
+2022-07-04 03:35:26 INFO  Executor:54 - Running task 0.0 in stage 4.0 (TID 8)
+2022-07-04 03:35:26 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Endorse_use.csv, range: 0-3307018, partition values: [empty row]
+2022-07-04 03:35:26 INFO  BlockManagerInfo:54 - Removed broadcast_5_piece0 on 192.168.1.10:37137 in memory (size: 4.5 KB, free: 366.2 MB)
+2022-07-04 03:35:26 INFO  Executor:54 - Finished task 0.0 in stage 4.0 (TID 8). 1306 bytes result sent to driver
+2022-07-04 03:35:26 INFO  TaskSetManager:54 - Finished task 0.0 in stage 4.0 (TID 8) in 12 ms on localhost (executor driver) (1/1)
+2022-07-04 03:35:26 INFO  TaskSchedulerImpl:54 - Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2022-07-04 03:35:26 INFO  DAGScheduler:54 - ResultStage 4 (load at NativeMethodAccessorImpl.java:0) finished in 0.023 s
+2022-07-04 03:35:26 INFO  DAGScheduler:54 - Job 4 finished: load at NativeMethodAccessorImpl.java:0, took 0.028566 s
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 81
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 77
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 90
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 103
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 92
+2022-07-04 03:35:26 INFO  BlockManagerInfo:54 - Removed broadcast_4_piece0 on 192.168.1.10:37137 in memory (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 105
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 64
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 111
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 114
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 68
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 107
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 72
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 113
+2022-07-04 03:35:26 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2022-07-04 03:35:26 INFO  FileSourceStrategy:54 - Post-Scan Filters: 
+2022-07-04 03:35:26 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2022-07-04 03:35:26 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2022-07-04 03:35:26 INFO  MemoryStore:54 - Block broadcast_10 stored as values in memory (estimated size 283.7 KB, free 365.1 MB)
+2022-07-04 03:35:26 INFO  MemoryStore:54 - Block broadcast_10_piece0 stored as bytes in memory (estimated size 23.3 KB, free 365.1 MB)
+2022-07-04 03:35:26 INFO  BlockManagerInfo:54 - Added broadcast_10_piece0 in memory on 192.168.1.10:37137 (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:26 INFO  SparkContext:54 - Created broadcast 10 from load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:26 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2022-07-04 03:35:26 INFO  SparkContext:54 - Starting job: load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:26 INFO  DAGScheduler:54 - Got job 5 (load at NativeMethodAccessorImpl.java:0) with 2 output partitions
+2022-07-04 03:35:26 INFO  DAGScheduler:54 - Final stage: ResultStage 5 (load at NativeMethodAccessorImpl.java:0)
+2022-07-04 03:35:26 INFO  DAGScheduler:54 - Parents of final stage: List()
+2022-07-04 03:35:26 INFO  DAGScheduler:54 - Missing parents: List()
+2022-07-04 03:35:26 INFO  DAGScheduler:54 - Submitting ResultStage 5 (MapPartitionsRDD[26] at load at NativeMethodAccessorImpl.java:0), which has no missing parents
+2022-07-04 03:35:26 INFO  MemoryStore:54 - Block broadcast_11 stored as values in memory (estimated size 13.2 KB, free 365.1 MB)
+2022-07-04 03:35:26 INFO  MemoryStore:54 - Block broadcast_11_piece0 stored as bytes in memory (estimated size 7.2 KB, free 365.1 MB)
+2022-07-04 03:35:26 INFO  BlockManagerInfo:54 - Added broadcast_11_piece0 in memory on 192.168.1.10:37137 (size: 7.2 KB, free: 366.2 MB)
+2022-07-04 03:35:26 INFO  SparkContext:54 - Created broadcast 11 from broadcast at DAGScheduler.scala:1161
+2022-07-04 03:35:26 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 5 (MapPartitionsRDD[26] at load at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1))
+2022-07-04 03:35:26 INFO  TaskSchedulerImpl:54 - Adding task set 5.0 with 2 tasks
+2022-07-04 03:35:26 INFO  TaskSetManager:54 - Starting task 0.0 in stage 5.0 (TID 9, localhost, executor driver, partition 0, PROCESS_LOCAL, 8332 bytes)
+2022-07-04 03:35:26 INFO  TaskSetManager:54 - Starting task 1.0 in stage 5.0 (TID 10, localhost, executor driver, partition 1, PROCESS_LOCAL, 8332 bytes)
+2022-07-04 03:35:26 INFO  Executor:54 - Running task 1.0 in stage 5.0 (TID 10)
+2022-07-04 03:35:26 INFO  Executor:54 - Running task 0.0 in stage 5.0 (TID 9)
+2022-07-04 03:35:26 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Endorse_use.csv, range: 0-3307018, partition values: [empty row]
+2022-07-04 03:35:26 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Endorse_use.csv, range: 0-3307018, partition values: [empty row]
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 126
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 130
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 145
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 140
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 147
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 123
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 128
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 135
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 137
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 149
+2022-07-04 03:35:26 INFO  BlockManagerInfo:54 - Removed broadcast_8_piece0 on 192.168.1.10:37137 in memory (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 146
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 153
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 124
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 152
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 127
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 138
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 134
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 131
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 150
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 139
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 129
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 136
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 142
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 133
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 132
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 125
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 143
+2022-07-04 03:35:26 INFO  BlockManagerInfo:54 - Removed broadcast_9_piece0 on 192.168.1.10:37137 in memory (size: 4.5 KB, free: 366.2 MB)
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 144
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 148
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 151
+2022-07-04 03:35:26 INFO  ContextCleaner:54 - Cleaned accumulator 141
+2022-07-04 03:35:27 INFO  Executor:54 - Finished task 1.0 in stage 5.0 (TID 10). 1572 bytes result sent to driver
+2022-07-04 03:35:27 INFO  TaskSetManager:54 - Finished task 1.0 in stage 5.0 (TID 10) in 441 ms on localhost (executor driver) (1/2)
+2022-07-04 03:35:27 INFO  Executor:54 - Finished task 0.0 in stage 5.0 (TID 9). 1572 bytes result sent to driver
+2022-07-04 03:35:27 INFO  TaskSetManager:54 - Finished task 0.0 in stage 5.0 (TID 9) in 446 ms on localhost (executor driver) (2/2)
+2022-07-04 03:35:27 INFO  TaskSchedulerImpl:54 - Removed TaskSet 5.0, whose tasks have all completed, from pool 
+2022-07-04 03:35:27 INFO  DAGScheduler:54 - ResultStage 5 (load at NativeMethodAccessorImpl.java:0) finished in 0.460 s
+2022-07-04 03:35:27 INFO  DAGScheduler:54 - Job 5 finished: load at NativeMethodAccessorImpl.java:0, took 0.464810 s
+2022-07-04 03:35:27 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2022-07-04 03:35:27 INFO  FileSourceStrategy:54 - Post-Scan Filters: (length(trim(value#50, None)) > 0)
+2022-07-04 03:35:27 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2022-07-04 03:35:27 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2022-07-04 03:35:27 INFO  MemoryStore:54 - Block broadcast_12 stored as values in memory (estimated size 283.7 KB, free 365.1 MB)
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 177
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 167
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 175
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 178
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 179
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 158
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 159
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 163
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 180
+2022-07-04 03:35:27 INFO  BlockManagerInfo:54 - Removed broadcast_11_piece0 on 192.168.1.10:37137 in memory (size: 7.2 KB, free: 366.2 MB)
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 168
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 174
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 171
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 169
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 173
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 155
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 170
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 162
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 164
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 166
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 165
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 172
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 183
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 182
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 161
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 156
+2022-07-04 03:35:27 INFO  MemoryStore:54 - Block broadcast_12_piece0 stored as bytes in memory (estimated size 23.3 KB, free 365.1 MB)
+2022-07-04 03:35:27 INFO  BlockManagerInfo:54 - Added broadcast_12_piece0 in memory on 192.168.1.10:37137 (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:27 INFO  SparkContext:54 - Created broadcast 12 from load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:27 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 21704360 bytes, open cost is considered as scanning 4194304 bytes.
+2022-07-04 03:35:27 INFO  BlockManagerInfo:54 - Removed broadcast_10_piece0 on 192.168.1.10:37137 in memory (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 176
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 181
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 154
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 160
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 157
+2022-07-04 03:35:27 INFO  SparkContext:54 - Starting job: load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:27 INFO  DAGScheduler:54 - Got job 6 (load at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2022-07-04 03:35:27 INFO  DAGScheduler:54 - Final stage: ResultStage 6 (load at NativeMethodAccessorImpl.java:0)
+2022-07-04 03:35:27 INFO  DAGScheduler:54 - Parents of final stage: List()
+2022-07-04 03:35:27 INFO  DAGScheduler:54 - Missing parents: List()
+2022-07-04 03:35:27 INFO  DAGScheduler:54 - Submitting ResultStage 6 (MapPartitionsRDD[30] at load at NativeMethodAccessorImpl.java:0), which has no missing parents
+2022-07-04 03:35:27 INFO  MemoryStore:54 - Block broadcast_13 stored as values in memory (estimated size 8.8 KB, free 365.4 MB)
+2022-07-04 03:35:27 INFO  MemoryStore:54 - Block broadcast_13_piece0 stored as bytes in memory (estimated size 4.5 KB, free 365.4 MB)
+2022-07-04 03:35:27 INFO  BlockManagerInfo:54 - Added broadcast_13_piece0 in memory on 192.168.1.10:37137 (size: 4.5 KB, free: 366.2 MB)
+2022-07-04 03:35:27 INFO  SparkContext:54 - Created broadcast 13 from broadcast at DAGScheduler.scala:1161
+2022-07-04 03:35:27 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 6 (MapPartitionsRDD[30] at load at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2022-07-04 03:35:27 INFO  TaskSchedulerImpl:54 - Adding task set 6.0 with 1 tasks
+2022-07-04 03:35:27 INFO  TaskSetManager:54 - Starting task 0.0 in stage 6.0 (TID 11, localhost, executor driver, partition 0, PROCESS_LOCAL, 8339 bytes)
+2022-07-04 03:35:27 INFO  Executor:54 - Running task 0.0 in stage 6.0 (TID 11)
+2022-07-04 03:35:27 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Primary_Person_use.csv, range: 0-21704360, partition values: [empty row]
+2022-07-04 03:35:27 INFO  Executor:54 - Finished task 0.0 in stage 6.0 (TID 11). 1557 bytes result sent to driver
+2022-07-04 03:35:27 INFO  TaskSetManager:54 - Finished task 0.0 in stage 6.0 (TID 11) in 10 ms on localhost (executor driver) (1/1)
+2022-07-04 03:35:27 INFO  TaskSchedulerImpl:54 - Removed TaskSet 6.0, whose tasks have all completed, from pool 
+2022-07-04 03:35:27 INFO  DAGScheduler:54 - ResultStage 6 (load at NativeMethodAccessorImpl.java:0) finished in 0.022 s
+2022-07-04 03:35:27 INFO  DAGScheduler:54 - Job 6 finished: load at NativeMethodAccessorImpl.java:0, took 0.026677 s
+2022-07-04 03:35:27 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2022-07-04 03:35:27 INFO  FileSourceStrategy:54 - Post-Scan Filters: 
+2022-07-04 03:35:27 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2022-07-04 03:35:27 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2022-07-04 03:35:27 INFO  MemoryStore:54 - Block broadcast_14 stored as values in memory (estimated size 283.7 KB, free 365.1 MB)
+2022-07-04 03:35:27 INFO  MemoryStore:54 - Block broadcast_14_piece0 stored as bytes in memory (estimated size 23.3 KB, free 365.1 MB)
+2022-07-04 03:35:27 INFO  BlockManagerInfo:54 - Added broadcast_14_piece0 in memory on 192.168.1.10:37137 (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:27 INFO  SparkContext:54 - Created broadcast 14 from load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:27 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 21704360 bytes, open cost is considered as scanning 4194304 bytes.
+2022-07-04 03:35:27 INFO  SparkContext:54 - Starting job: load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:27 INFO  DAGScheduler:54 - Got job 7 (load at NativeMethodAccessorImpl.java:0) with 4 output partitions
+2022-07-04 03:35:27 INFO  DAGScheduler:54 - Final stage: ResultStage 7 (load at NativeMethodAccessorImpl.java:0)
+2022-07-04 03:35:27 INFO  DAGScheduler:54 - Parents of final stage: List()
+2022-07-04 03:35:27 INFO  DAGScheduler:54 - Missing parents: List()
+2022-07-04 03:35:27 INFO  DAGScheduler:54 - Submitting ResultStage 7 (MapPartitionsRDD[35] at load at NativeMethodAccessorImpl.java:0), which has no missing parents
+2022-07-04 03:35:27 INFO  MemoryStore:54 - Block broadcast_15 stored as values in memory (estimated size 13.8 KB, free 365.1 MB)
+2022-07-04 03:35:27 INFO  MemoryStore:54 - Block broadcast_15_piece0 stored as bytes in memory (estimated size 7.4 KB, free 365.1 MB)
+2022-07-04 03:35:27 INFO  BlockManagerInfo:54 - Added broadcast_15_piece0 in memory on 192.168.1.10:37137 (size: 7.4 KB, free: 366.2 MB)
+2022-07-04 03:35:27 INFO  SparkContext:54 - Created broadcast 15 from broadcast at DAGScheduler.scala:1161
+2022-07-04 03:35:27 INFO  DAGScheduler:54 - Submitting 4 missing tasks from ResultStage 7 (MapPartitionsRDD[35] at load at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+2022-07-04 03:35:27 INFO  TaskSchedulerImpl:54 - Adding task set 7.0 with 4 tasks
+2022-07-04 03:35:27 INFO  TaskSetManager:54 - Starting task 0.0 in stage 7.0 (TID 12, localhost, executor driver, partition 0, PROCESS_LOCAL, 8339 bytes)
+2022-07-04 03:35:27 INFO  TaskSetManager:54 - Starting task 1.0 in stage 7.0 (TID 13, localhost, executor driver, partition 1, PROCESS_LOCAL, 8339 bytes)
+2022-07-04 03:35:27 INFO  TaskSetManager:54 - Starting task 2.0 in stage 7.0 (TID 14, localhost, executor driver, partition 2, PROCESS_LOCAL, 8339 bytes)
+2022-07-04 03:35:27 INFO  TaskSetManager:54 - Starting task 3.0 in stage 7.0 (TID 15, localhost, executor driver, partition 3, PROCESS_LOCAL, 8339 bytes)
+2022-07-04 03:35:27 INFO  Executor:54 - Running task 1.0 in stage 7.0 (TID 13)
+2022-07-04 03:35:27 INFO  Executor:54 - Running task 2.0 in stage 7.0 (TID 14)
+2022-07-04 03:35:27 INFO  Executor:54 - Running task 0.0 in stage 7.0 (TID 12)
+2022-07-04 03:35:27 INFO  Executor:54 - Running task 3.0 in stage 7.0 (TID 15)
+2022-07-04 03:35:27 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Primary_Person_use.csv, range: 21704360-39214417, partition values: [empty row]
+2022-07-04 03:35:27 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Primary_Person_use.csv, range: 21704360-39214417, partition values: [empty row]
+2022-07-04 03:35:27 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Primary_Person_use.csv, range: 0-21704360, partition values: [empty row]
+2022-07-04 03:35:27 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Primary_Person_use.csv, range: 0-21704360, partition values: [empty row]
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 212
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 197
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 203
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 195
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 205
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 207
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 208
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 192
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 193
+2022-07-04 03:35:27 INFO  BlockManagerInfo:54 - Removed broadcast_12_piece0 on 192.168.1.10:37137 in memory (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 200
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 186
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 191
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 210
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 211
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 188
+2022-07-04 03:35:27 INFO  BlockManagerInfo:54 - Removed broadcast_13_piece0 on 192.168.1.10:37137 in memory (size: 4.5 KB, free: 366.2 MB)
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 185
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 194
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 206
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 214
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 184
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 204
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 209
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 189
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 187
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 190
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 213
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 202
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 198
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 196
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 199
+2022-07-04 03:35:27 INFO  ContextCleaner:54 - Cleaned accumulator 201
+2022-07-04 03:35:28 INFO  Executor:54 - Finished task 2.0 in stage 7.0 (TID 14). 1720 bytes result sent to driver
+2022-07-04 03:35:28 INFO  TaskSetManager:54 - Finished task 2.0 in stage 7.0 (TID 14) in 894 ms on localhost (executor driver) (1/4)
+2022-07-04 03:35:28 INFO  Executor:54 - Finished task 3.0 in stage 7.0 (TID 15). 1720 bytes result sent to driver
+2022-07-04 03:35:28 INFO  TaskSetManager:54 - Finished task 3.0 in stage 7.0 (TID 15) in 931 ms on localhost (executor driver) (2/4)
+2022-07-04 03:35:28 INFO  Executor:54 - Finished task 1.0 in stage 7.0 (TID 13). 1720 bytes result sent to driver
+2022-07-04 03:35:28 INFO  TaskSetManager:54 - Finished task 1.0 in stage 7.0 (TID 13) in 1010 ms on localhost (executor driver) (3/4)
+2022-07-04 03:35:28 INFO  Executor:54 - Finished task 0.0 in stage 7.0 (TID 12). 1763 bytes result sent to driver
+2022-07-04 03:35:28 INFO  TaskSetManager:54 - Finished task 0.0 in stage 7.0 (TID 12) in 1018 ms on localhost (executor driver) (4/4)
+2022-07-04 03:35:28 INFO  TaskSchedulerImpl:54 - Removed TaskSet 7.0, whose tasks have all completed, from pool 
+2022-07-04 03:35:28 INFO  DAGScheduler:54 - ResultStage 7 (load at NativeMethodAccessorImpl.java:0) finished in 1.027 s
+2022-07-04 03:35:28 INFO  DAGScheduler:54 - Job 7 finished: load at NativeMethodAccessorImpl.java:0, took 1.031803 s
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 236
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 241
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 229
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 223
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 228
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 240
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 224
+2022-07-04 03:35:28 INFO  BlockManagerInfo:54 - Removed broadcast_15_piece0 on 192.168.1.10:37137 in memory (size: 7.4 KB, free: 366.2 MB)
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 216
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 234
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 230
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 231
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 227
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 220
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 221
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 215
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 218
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 239
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 235
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 233
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 226
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 225
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 232
+2022-07-04 03:35:28 INFO  BlockManagerInfo:54 - Removed broadcast_14_piece0 on 192.168.1.10:37137 in memory (size: 23.3 KB, free: 366.3 MB)
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 217
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 222
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 238
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 242
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 237
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 244
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 243
+2022-07-04 03:35:28 INFO  ContextCleaner:54 - Cleaned accumulator 219
+2022-07-04 03:35:28 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2022-07-04 03:35:28 INFO  FileSourceStrategy:54 - Post-Scan Filters: (length(trim(value#124, None)) > 0)
+2022-07-04 03:35:28 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2022-07-04 03:35:28 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2022-07-04 03:35:28 INFO  MemoryStore:54 - Block broadcast_16 stored as values in memory (estimated size 283.7 KB, free 365.4 MB)
+2022-07-04 03:35:28 INFO  MemoryStore:54 - Block broadcast_16_piece0 stored as bytes in memory (estimated size 23.3 KB, free 365.4 MB)
+2022-07-04 03:35:28 INFO  BlockManagerInfo:54 - Added broadcast_16_piece0 in memory on 192.168.1.10:37137 (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:28 INFO  SparkContext:54 - Created broadcast 16 from load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:28 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 25727634 bytes, open cost is considered as scanning 4194304 bytes.
+2022-07-04 03:35:28 INFO  SparkContext:54 - Starting job: load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:28 INFO  DAGScheduler:54 - Got job 8 (load at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2022-07-04 03:35:28 INFO  DAGScheduler:54 - Final stage: ResultStage 8 (load at NativeMethodAccessorImpl.java:0)
+2022-07-04 03:35:28 INFO  DAGScheduler:54 - Parents of final stage: List()
+2022-07-04 03:35:28 INFO  DAGScheduler:54 - Missing parents: List()
+2022-07-04 03:35:28 INFO  DAGScheduler:54 - Submitting ResultStage 8 (MapPartitionsRDD[39] at load at NativeMethodAccessorImpl.java:0), which has no missing parents
+2022-07-04 03:35:28 INFO  MemoryStore:54 - Block broadcast_17 stored as values in memory (estimated size 8.8 KB, free 365.4 MB)
+2022-07-04 03:35:28 INFO  MemoryStore:54 - Block broadcast_17_piece0 stored as bytes in memory (estimated size 4.5 KB, free 365.4 MB)
+2022-07-04 03:35:28 INFO  BlockManagerInfo:54 - Added broadcast_17_piece0 in memory on 192.168.1.10:37137 (size: 4.5 KB, free: 366.2 MB)
+2022-07-04 03:35:28 INFO  SparkContext:54 - Created broadcast 17 from broadcast at DAGScheduler.scala:1161
+2022-07-04 03:35:28 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 8 (MapPartitionsRDD[39] at load at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2022-07-04 03:35:28 INFO  TaskSchedulerImpl:54 - Adding task set 8.0 with 1 tasks
+2022-07-04 03:35:28 INFO  TaskSetManager:54 - Starting task 0.0 in stage 8.0 (TID 16, localhost, executor driver, partition 0, PROCESS_LOCAL, 8330 bytes)
+2022-07-04 03:35:28 INFO  Executor:54 - Running task 0.0 in stage 8.0 (TID 16)
+2022-07-04 03:35:28 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Units_use.csv, range: 0-25727634, partition values: [empty row]
+2022-07-04 03:35:28 INFO  Executor:54 - Finished task 0.0 in stage 8.0 (TID 16). 1637 bytes result sent to driver
+2022-07-04 03:35:28 INFO  TaskSetManager:54 - Finished task 0.0 in stage 8.0 (TID 16) in 14 ms on localhost (executor driver) (1/1)
+2022-07-04 03:35:28 INFO  TaskSchedulerImpl:54 - Removed TaskSet 8.0, whose tasks have all completed, from pool 
+2022-07-04 03:35:28 INFO  DAGScheduler:54 - ResultStage 8 (load at NativeMethodAccessorImpl.java:0) finished in 0.023 s
+2022-07-04 03:35:28 INFO  DAGScheduler:54 - Job 8 finished: load at NativeMethodAccessorImpl.java:0, took 0.027420 s
+2022-07-04 03:35:28 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2022-07-04 03:35:28 INFO  FileSourceStrategy:54 - Post-Scan Filters: 
+2022-07-04 03:35:28 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2022-07-04 03:35:28 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2022-07-04 03:35:28 INFO  MemoryStore:54 - Block broadcast_18 stored as values in memory (estimated size 283.7 KB, free 365.1 MB)
+2022-07-04 03:35:28 INFO  MemoryStore:54 - Block broadcast_18_piece0 stored as bytes in memory (estimated size 23.3 KB, free 365.1 MB)
+2022-07-04 03:35:29 INFO  BlockManagerInfo:54 - Added broadcast_18_piece0 in memory on 192.168.1.10:37137 (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:29 INFO  SparkContext:54 - Created broadcast 18 from load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:29 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 25727634 bytes, open cost is considered as scanning 4194304 bytes.
+2022-07-04 03:35:29 INFO  SparkContext:54 - Starting job: load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:29 INFO  DAGScheduler:54 - Got job 9 (load at NativeMethodAccessorImpl.java:0) with 4 output partitions
+2022-07-04 03:35:29 INFO  DAGScheduler:54 - Final stage: ResultStage 9 (load at NativeMethodAccessorImpl.java:0)
+2022-07-04 03:35:29 INFO  DAGScheduler:54 - Parents of final stage: List()
+2022-07-04 03:35:29 INFO  DAGScheduler:54 - Missing parents: List()
+2022-07-04 03:35:29 INFO  DAGScheduler:54 - Submitting ResultStage 9 (MapPartitionsRDD[44] at load at NativeMethodAccessorImpl.java:0), which has no missing parents
+2022-07-04 03:35:29 INFO  MemoryStore:54 - Block broadcast_19 stored as values in memory (estimated size 13.9 KB, free 365.1 MB)
+2022-07-04 03:35:29 INFO  MemoryStore:54 - Block broadcast_19_piece0 stored as bytes in memory (estimated size 7.5 KB, free 365.1 MB)
+2022-07-04 03:35:29 INFO  BlockManagerInfo:54 - Added broadcast_19_piece0 in memory on 192.168.1.10:37137 (size: 7.5 KB, free: 366.2 MB)
+2022-07-04 03:35:29 INFO  SparkContext:54 - Created broadcast 19 from broadcast at DAGScheduler.scala:1161
+2022-07-04 03:35:29 INFO  DAGScheduler:54 - Submitting 4 missing tasks from ResultStage 9 (MapPartitionsRDD[44] at load at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+2022-07-04 03:35:29 INFO  TaskSchedulerImpl:54 - Adding task set 9.0 with 4 tasks
+2022-07-04 03:35:29 INFO  TaskSetManager:54 - Starting task 0.0 in stage 9.0 (TID 17, localhost, executor driver, partition 0, PROCESS_LOCAL, 8330 bytes)
+2022-07-04 03:35:29 INFO  TaskSetManager:54 - Starting task 1.0 in stage 9.0 (TID 18, localhost, executor driver, partition 1, PROCESS_LOCAL, 8330 bytes)
+2022-07-04 03:35:29 INFO  TaskSetManager:54 - Starting task 2.0 in stage 9.0 (TID 19, localhost, executor driver, partition 2, PROCESS_LOCAL, 8330 bytes)
+2022-07-04 03:35:29 INFO  TaskSetManager:54 - Starting task 3.0 in stage 9.0 (TID 20, localhost, executor driver, partition 3, PROCESS_LOCAL, 8330 bytes)
+2022-07-04 03:35:29 INFO  Executor:54 - Running task 1.0 in stage 9.0 (TID 18)
+2022-07-04 03:35:29 INFO  Executor:54 - Running task 2.0 in stage 9.0 (TID 19)
+2022-07-04 03:35:29 INFO  Executor:54 - Running task 0.0 in stage 9.0 (TID 17)
+2022-07-04 03:35:29 INFO  Executor:54 - Running task 3.0 in stage 9.0 (TID 20)
+2022-07-04 03:35:29 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Units_use.csv, range: 25727634-47260965, partition values: [empty row]
+2022-07-04 03:35:29 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Units_use.csv, range: 0-25727634, partition values: [empty row]
+2022-07-04 03:35:29 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Units_use.csv, range: 0-25727634, partition values: [empty row]
+2022-07-04 03:35:29 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Units_use.csv, range: 25727634-47260965, partition values: [empty row]
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 268
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 259
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 263
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 266
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 269
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 246
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 262
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 271
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 249
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 275
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 252
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 257
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 248
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 254
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 253
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 274
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 260
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 245
+2022-07-04 03:35:29 INFO  BlockManagerInfo:54 - Removed broadcast_17_piece0 on 192.168.1.10:37137 in memory (size: 4.5 KB, free: 366.2 MB)
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 272
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 250
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 273
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 264
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 270
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 265
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 256
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 258
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 261
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 267
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 247
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 255
+2022-07-04 03:35:29 INFO  ContextCleaner:54 - Cleaned accumulator 251
+2022-07-04 03:35:29 INFO  BlockManagerInfo:54 - Removed broadcast_16_piece0 on 192.168.1.10:37137 in memory (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:30 INFO  Executor:54 - Finished task 3.0 in stage 9.0 (TID 20). 1745 bytes result sent to driver
+2022-07-04 03:35:30 INFO  TaskSetManager:54 - Finished task 3.0 in stage 9.0 (TID 20) in 1288 ms on localhost (executor driver) (1/4)
+2022-07-04 03:35:30 INFO  Executor:54 - Finished task 2.0 in stage 9.0 (TID 19). 1745 bytes result sent to driver
+2022-07-04 03:35:30 INFO  TaskSetManager:54 - Finished task 2.0 in stage 9.0 (TID 19) in 1328 ms on localhost (executor driver) (2/4)
+2022-07-04 03:35:30 INFO  Executor:54 - Finished task 1.0 in stage 9.0 (TID 18). 1745 bytes result sent to driver
+2022-07-04 03:35:30 INFO  TaskSetManager:54 - Finished task 1.0 in stage 9.0 (TID 18) in 1496 ms on localhost (executor driver) (3/4)
+2022-07-04 03:35:30 INFO  Executor:54 - Finished task 0.0 in stage 9.0 (TID 17). 1745 bytes result sent to driver
+2022-07-04 03:35:30 INFO  TaskSetManager:54 - Finished task 0.0 in stage 9.0 (TID 17) in 1515 ms on localhost (executor driver) (4/4)
+2022-07-04 03:35:30 INFO  TaskSchedulerImpl:54 - Removed TaskSet 9.0, whose tasks have all completed, from pool 
+2022-07-04 03:35:30 INFO  DAGScheduler:54 - ResultStage 9 (load at NativeMethodAccessorImpl.java:0) finished in 1.528 s
+2022-07-04 03:35:30 INFO  DAGScheduler:54 - Job 9 finished: load at NativeMethodAccessorImpl.java:0, took 1.532642 s
+2022-07-04 03:35:30 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2022-07-04 03:35:30 INFO  FileSourceStrategy:54 - Post-Scan Filters: (length(trim(value#208, None)) > 0)
+2022-07-04 03:35:30 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2022-07-04 03:35:30 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2022-07-04 03:35:30 INFO  MemoryStore:54 - Block broadcast_20 stored as values in memory (estimated size 283.7 KB, free 365.1 MB)
+2022-07-04 03:35:30 INFO  MemoryStore:54 - Block broadcast_20_piece0 stored as bytes in memory (estimated size 23.3 KB, free 365.1 MB)
+2022-07-04 03:35:30 INFO  BlockManagerInfo:54 - Added broadcast_20_piece0 in memory on 192.168.1.10:37137 (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:30 INFO  SparkContext:54 - Created broadcast 20 from load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:30 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2022-07-04 03:35:30 INFO  SparkContext:54 - Starting job: load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:30 INFO  DAGScheduler:54 - Got job 10 (load at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2022-07-04 03:35:30 INFO  DAGScheduler:54 - Final stage: ResultStage 10 (load at NativeMethodAccessorImpl.java:0)
+2022-07-04 03:35:30 INFO  DAGScheduler:54 - Parents of final stage: List()
+2022-07-04 03:35:30 INFO  DAGScheduler:54 - Missing parents: List()
+2022-07-04 03:35:30 INFO  DAGScheduler:54 - Submitting ResultStage 10 (MapPartitionsRDD[48] at load at NativeMethodAccessorImpl.java:0), which has no missing parents
+2022-07-04 03:35:30 INFO  MemoryStore:54 - Block broadcast_21 stored as values in memory (estimated size 8.8 KB, free 365.1 MB)
+2022-07-04 03:35:30 INFO  MemoryStore:54 - Block broadcast_21_piece0 stored as bytes in memory (estimated size 4.5 KB, free 365.1 MB)
+2022-07-04 03:35:30 INFO  BlockManagerInfo:54 - Added broadcast_21_piece0 in memory on 192.168.1.10:37137 (size: 4.5 KB, free: 366.2 MB)
+2022-07-04 03:35:30 INFO  SparkContext:54 - Created broadcast 21 from broadcast at DAGScheduler.scala:1161
+2022-07-04 03:35:30 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 10 (MapPartitionsRDD[48] at load at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2022-07-04 03:35:30 INFO  TaskSchedulerImpl:54 - Adding task set 10.0 with 1 tasks
+2022-07-04 03:35:30 INFO  TaskSetManager:54 - Starting task 0.0 in stage 10.0 (TID 21, localhost, executor driver, partition 0, PROCESS_LOCAL, 8333 bytes)
+2022-07-04 03:35:30 INFO  Executor:54 - Running task 0.0 in stage 10.0 (TID 21)
+2022-07-04 03:35:30 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Restrict_use.csv, range: 0-4050989, partition values: [empty row]
+2022-07-04 03:35:30 INFO  Executor:54 - Finished task 0.0 in stage 10.0 (TID 21). 1306 bytes result sent to driver
+2022-07-04 03:35:30 INFO  TaskSetManager:54 - Finished task 0.0 in stage 10.0 (TID 21) in 15 ms on localhost (executor driver) (1/1)
+2022-07-04 03:35:30 INFO  TaskSchedulerImpl:54 - Removed TaskSet 10.0, whose tasks have all completed, from pool 
+2022-07-04 03:35:30 INFO  DAGScheduler:54 - ResultStage 10 (load at NativeMethodAccessorImpl.java:0) finished in 0.027 s
+2022-07-04 03:35:30 INFO  DAGScheduler:54 - Job 10 finished: load at NativeMethodAccessorImpl.java:0, took 0.029801 s
+2022-07-04 03:35:30 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2022-07-04 03:35:30 INFO  FileSourceStrategy:54 - Post-Scan Filters: 
+2022-07-04 03:35:30 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2022-07-04 03:35:30 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2022-07-04 03:35:30 INFO  MemoryStore:54 - Block broadcast_22 stored as values in memory (estimated size 283.7 KB, free 364.8 MB)
+2022-07-04 03:35:30 INFO  MemoryStore:54 - Block broadcast_22_piece0 stored as bytes in memory (estimated size 23.3 KB, free 364.8 MB)
+2022-07-04 03:35:30 INFO  BlockManagerInfo:54 - Added broadcast_22_piece0 in memory on 192.168.1.10:37137 (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:30 INFO  SparkContext:54 - Created broadcast 22 from load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:30 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2022-07-04 03:35:30 INFO  SparkContext:54 - Starting job: load at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:30 INFO  DAGScheduler:54 - Got job 11 (load at NativeMethodAccessorImpl.java:0) with 2 output partitions
+2022-07-04 03:35:30 INFO  DAGScheduler:54 - Final stage: ResultStage 11 (load at NativeMethodAccessorImpl.java:0)
+2022-07-04 03:35:30 INFO  DAGScheduler:54 - Parents of final stage: List()
+2022-07-04 03:35:30 INFO  DAGScheduler:54 - Missing parents: List()
+2022-07-04 03:35:30 INFO  DAGScheduler:54 - Submitting ResultStage 11 (MapPartitionsRDD[53] at load at NativeMethodAccessorImpl.java:0), which has no missing parents
+2022-07-04 03:35:31 INFO  MemoryStore:54 - Block broadcast_23 stored as values in memory (estimated size 13.2 KB, free 364.8 MB)
+2022-07-04 03:35:31 INFO  MemoryStore:54 - Block broadcast_23_piece0 stored as bytes in memory (estimated size 7.2 KB, free 364.7 MB)
+2022-07-04 03:35:31 INFO  BlockManagerInfo:54 - Added broadcast_23_piece0 in memory on 192.168.1.10:37137 (size: 7.2 KB, free: 366.2 MB)
+2022-07-04 03:35:31 INFO  SparkContext:54 - Created broadcast 23 from broadcast at DAGScheduler.scala:1161
+2022-07-04 03:35:31 INFO  DAGScheduler:54 - Submitting 2 missing tasks from ResultStage 11 (MapPartitionsRDD[53] at load at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1))
+2022-07-04 03:35:31 INFO  TaskSchedulerImpl:54 - Adding task set 11.0 with 2 tasks
+2022-07-04 03:35:31 INFO  TaskSetManager:54 - Starting task 0.0 in stage 11.0 (TID 22, localhost, executor driver, partition 0, PROCESS_LOCAL, 8333 bytes)
+2022-07-04 03:35:31 INFO  TaskSetManager:54 - Starting task 1.0 in stage 11.0 (TID 23, localhost, executor driver, partition 1, PROCESS_LOCAL, 8333 bytes)
+2022-07-04 03:35:31 INFO  Executor:54 - Running task 0.0 in stage 11.0 (TID 22)
+2022-07-04 03:35:31 INFO  Executor:54 - Running task 1.0 in stage 11.0 (TID 23)
+2022-07-04 03:35:31 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Restrict_use.csv, range: 0-4050989, partition values: [empty row]
+2022-07-04 03:35:31 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Restrict_use.csv, range: 0-4050989, partition values: [empty row]
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 326
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 336
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 334
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 286
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 328
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 310
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 302
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 332
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 285
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 301
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 325
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 316
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 330
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 304
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 314
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 308
+2022-07-04 03:35:31 INFO  BlockManagerInfo:54 - Removed broadcast_18_piece0 on 192.168.1.10:37137 in memory (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 278
+2022-07-04 03:35:31 INFO  BlockManagerInfo:54 - Removed broadcast_21_piece0 on 192.168.1.10:37137 in memory (size: 4.5 KB, free: 366.2 MB)
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 306
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 318
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 329
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 298
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 323
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 303
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 331
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 299
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 312
+2022-07-04 03:35:31 INFO  BlockManagerInfo:54 - Removed broadcast_19_piece0 on 192.168.1.10:37137 in memory (size: 7.5 KB, free: 366.2 MB)
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 292
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 289
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 297
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 283
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 319
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 321
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 315
+2022-07-04 03:35:31 INFO  BlockManagerInfo:54 - Removed broadcast_20_piece0 on 192.168.1.10:37137 in memory (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 290
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 322
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 324
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 288
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 327
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 335
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 287
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 291
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 284
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 296
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 320
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 313
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 293
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 282
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 294
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 276
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 309
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 300
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 305
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 277
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 279
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 280
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 307
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 295
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 311
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 281
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 317
+2022-07-04 03:35:31 INFO  ContextCleaner:54 - Cleaned accumulator 333
+2022-07-04 03:35:31 INFO  Executor:54 - Finished task 1.0 in stage 11.0 (TID 23). 1572 bytes result sent to driver
+2022-07-04 03:35:31 INFO  TaskSetManager:54 - Finished task 1.0 in stage 11.0 (TID 23) in 410 ms on localhost (executor driver) (1/2)
+2022-07-04 03:35:31 INFO  Executor:54 - Finished task 0.0 in stage 11.0 (TID 22). 1572 bytes result sent to driver
+2022-07-04 03:35:31 INFO  TaskSetManager:54 - Finished task 0.0 in stage 11.0 (TID 22) in 467 ms on localhost (executor driver) (2/2)
+2022-07-04 03:35:31 INFO  TaskSchedulerImpl:54 - Removed TaskSet 11.0, whose tasks have all completed, from pool 
+2022-07-04 03:35:31 INFO  DAGScheduler:54 - ResultStage 11 (load at NativeMethodAccessorImpl.java:0) finished in 0.475 s
+2022-07-04 03:35:31 INFO  DAGScheduler:54 - Job 11 finished: load at NativeMethodAccessorImpl.java:0, took 0.478797 s
+Output_is_saved_to_file_location : output/count_male_crash.csv
+2022-07-04 03:35:31 WARN  Utils:66 - Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.debug.maxToStringFields' in SparkEnv.conf.
+2022-07-04 03:35:31 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2022-07-04 03:35:31 INFO  FileSourceStrategy:54 - Post-Scan Filters: isnotnull(PRSN_GNDR_ID#68),isnotnull(DEATH_CNT#87),(PRSN_GNDR_ID#68 = MALE),(DEATH_CNT#87 = 1)
+2022-07-04 03:35:31 INFO  FileSourceStrategy:54 - Output Data Schema: struct<CRASH_ID: int, UNIT_NBR: int, PRSN_NBR: int, PRSN_TYPE_ID: string, PRSN_OCCPNT_POS_ID: string ... 30 more fields>
+2022-07-04 03:35:31 INFO  FileSourceScanExec:54 - Pushed Filters: IsNotNull(PRSN_GNDR_ID),IsNotNull(DEATH_CNT),EqualTo(PRSN_GNDR_ID,MALE),EqualTo(DEATH_CNT,1)
+2022-07-04 03:35:31 INFO  FileOutputCommitter:108 - File Output Committer Algorithm version is 1
+2022-07-04 03:35:31 INFO  SQLHadoopMapReduceCommitProtocol:54 - Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2022-07-04 03:35:31 INFO  CodeGenerator:54 - Code generated in 115.355479 ms
+2022-07-04 03:35:31 INFO  MemoryStore:54 - Block broadcast_24 stored as values in memory (estimated size 283.7 KB, free 365.1 MB)
+2022-07-04 03:35:31 INFO  MemoryStore:54 - Block broadcast_24_piece0 stored as bytes in memory (estimated size 23.3 KB, free 365.1 MB)
+2022-07-04 03:35:31 INFO  BlockManagerInfo:54 - Added broadcast_24_piece0 in memory on 192.168.1.10:37137 (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:31 INFO  SparkContext:54 - Created broadcast 24 from save at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:32 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 10852180 bytes, open cost is considered as scanning 4194304 bytes.
+2022-07-04 03:35:32 INFO  SparkContext:54 - Starting job: save at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:32 INFO  DAGScheduler:54 - Registering RDD 56 (save at NativeMethodAccessorImpl.java:0)
+2022-07-04 03:35:32 INFO  DAGScheduler:54 - Got job 12 (save at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2022-07-04 03:35:32 INFO  DAGScheduler:54 - Final stage: ResultStage 13 (save at NativeMethodAccessorImpl.java:0)
+2022-07-04 03:35:32 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 12)
+2022-07-04 03:35:32 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 12)
+2022-07-04 03:35:32 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 12 (MapPartitionsRDD[56] at save at NativeMethodAccessorImpl.java:0), which has no missing parents
+2022-07-04 03:35:32 INFO  MemoryStore:54 - Block broadcast_25 stored as values in memory (estimated size 25.0 KB, free 365.1 MB)
+2022-07-04 03:35:32 INFO  MemoryStore:54 - Block broadcast_25_piece0 stored as bytes in memory (estimated size 9.6 KB, free 365.0 MB)
+2022-07-04 03:35:32 INFO  BlockManagerInfo:54 - Added broadcast_25_piece0 in memory on 192.168.1.10:37137 (size: 9.6 KB, free: 366.2 MB)
+2022-07-04 03:35:32 INFO  SparkContext:54 - Created broadcast 25 from broadcast at DAGScheduler.scala:1161
+2022-07-04 03:35:32 INFO  DAGScheduler:54 - Submitting 4 missing tasks from ShuffleMapStage 12 (MapPartitionsRDD[56] at save at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+2022-07-04 03:35:32 INFO  TaskSchedulerImpl:54 - Adding task set 12.0 with 4 tasks
+2022-07-04 03:35:32 INFO  TaskSetManager:54 - Starting task 0.0 in stage 12.0 (TID 24, localhost, executor driver, partition 0, PROCESS_LOCAL, 8328 bytes)
+2022-07-04 03:35:32 INFO  TaskSetManager:54 - Starting task 1.0 in stage 12.0 (TID 25, localhost, executor driver, partition 1, PROCESS_LOCAL, 8328 bytes)
+2022-07-04 03:35:32 INFO  TaskSetManager:54 - Starting task 2.0 in stage 12.0 (TID 26, localhost, executor driver, partition 2, PROCESS_LOCAL, 8328 bytes)
+2022-07-04 03:35:32 INFO  TaskSetManager:54 - Starting task 3.0 in stage 12.0 (TID 27, localhost, executor driver, partition 3, PROCESS_LOCAL, 8328 bytes)
+2022-07-04 03:35:32 INFO  Executor:54 - Running task 0.0 in stage 12.0 (TID 24)
+2022-07-04 03:35:32 INFO  Executor:54 - Running task 3.0 in stage 12.0 (TID 27)
+2022-07-04 03:35:32 INFO  Executor:54 - Running task 1.0 in stage 12.0 (TID 25)
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 350
+2022-07-04 03:35:32 INFO  Executor:54 - Running task 2.0 in stage 12.0 (TID 26)
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 341
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 351
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 364
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 356
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 349
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 363
+2022-07-04 03:35:32 INFO  BlockManagerInfo:54 - Removed broadcast_22_piece0 on 192.168.1.10:37137 in memory (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 357
+2022-07-04 03:35:32 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Primary_Person_use.csv, range: 0-10852180, partition values: [empty row]
+2022-07-04 03:35:32 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Primary_Person_use.csv, range: 21704360-32556540, partition values: [empty row]
+2022-07-04 03:35:32 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Primary_Person_use.csv, range: 10852180-21704360, partition values: [empty row]
+2022-07-04 03:35:32 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Primary_Person_use.csv, range: 32556540-39214417, partition values: [empty row]
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 337
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 367
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 345
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 344
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 340
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 359
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 355
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 361
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 352
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 348
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 360
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 338
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 343
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 362
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 365
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 347
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 366
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 358
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 342
+2022-07-04 03:35:32 INFO  BlockManagerInfo:54 - Removed broadcast_23_piece0 on 192.168.1.10:37137 in memory (size: 7.2 KB, free: 366.2 MB)
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 353
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 354
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 346
+2022-07-04 03:35:32 INFO  ContextCleaner:54 - Cleaned accumulator 339
+2022-07-04 03:35:32 INFO  CodeGenerator:54 - Code generated in 76.353138 ms
+2022-07-04 03:35:33 INFO  Executor:54 - Finished task 3.0 in stage 12.0 (TID 27). 1578 bytes result sent to driver
+2022-07-04 03:35:33 INFO  TaskSetManager:54 - Finished task 3.0 in stage 12.0 (TID 27) in 1646 ms on localhost (executor driver) (1/4)
+2022-07-04 03:35:34 INFO  Executor:54 - Finished task 1.0 in stage 12.0 (TID 25). 1578 bytes result sent to driver
+2022-07-04 03:35:34 INFO  TaskSetManager:54 - Finished task 1.0 in stage 12.0 (TID 25) in 1911 ms on localhost (executor driver) (2/4)
+2022-07-04 03:35:34 INFO  Executor:54 - Finished task 2.0 in stage 12.0 (TID 26). 1535 bytes result sent to driver
+2022-07-04 03:35:34 INFO  TaskSetManager:54 - Finished task 2.0 in stage 12.0 (TID 26) in 2025 ms on localhost (executor driver) (3/4)
+2022-07-04 03:35:34 INFO  Executor:54 - Finished task 0.0 in stage 12.0 (TID 24). 1535 bytes result sent to driver
+2022-07-04 03:35:34 INFO  TaskSetManager:54 - Finished task 0.0 in stage 12.0 (TID 24) in 2039 ms on localhost (executor driver) (4/4)
+2022-07-04 03:35:34 INFO  TaskSchedulerImpl:54 - Removed TaskSet 12.0, whose tasks have all completed, from pool 
+2022-07-04 03:35:34 INFO  DAGScheduler:54 - ShuffleMapStage 12 (save at NativeMethodAccessorImpl.java:0) finished in 2.085 s
+2022-07-04 03:35:34 INFO  DAGScheduler:54 - looking for newly runnable stages
+2022-07-04 03:35:34 INFO  DAGScheduler:54 - running: Set()
+2022-07-04 03:35:34 INFO  DAGScheduler:54 - waiting: Set(ResultStage 13)
+2022-07-04 03:35:34 INFO  DAGScheduler:54 - failed: Set()
+2022-07-04 03:35:34 INFO  DAGScheduler:54 - Submitting ResultStage 13 (ShuffledRowRDD[57] at save at NativeMethodAccessorImpl.java:0), which has no missing parents
+2022-07-04 03:35:34 INFO  MemoryStore:54 - Block broadcast_26 stored as values in memory (estimated size 145.8 KB, free 365.2 MB)
+2022-07-04 03:35:34 INFO  MemoryStore:54 - Block broadcast_26_piece0 stored as bytes in memory (estimated size 52.1 KB, free 365.2 MB)
+2022-07-04 03:35:34 INFO  BlockManagerInfo:54 - Added broadcast_26_piece0 in memory on 192.168.1.10:37137 (size: 52.1 KB, free: 366.2 MB)
+2022-07-04 03:35:34 INFO  SparkContext:54 - Created broadcast 26 from broadcast at DAGScheduler.scala:1161
+2022-07-04 03:35:34 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 13 (ShuffledRowRDD[57] at save at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2022-07-04 03:35:34 INFO  TaskSchedulerImpl:54 - Adding task set 13.0 with 1 tasks
+2022-07-04 03:35:34 INFO  TaskSetManager:54 - Starting task 0.0 in stage 13.0 (TID 28, localhost, executor driver, partition 0, ANY, 7767 bytes)
+2022-07-04 03:35:34 INFO  Executor:54 - Running task 0.0 in stage 13.0 (TID 28)
+2022-07-04 03:35:34 INFO  ShuffleBlockFetcherIterator:54 - Getting 4 non-empty blocks including 4 local blocks and 0 remote blocks
+2022-07-04 03:35:34 INFO  ShuffleBlockFetcherIterator:54 - Started 0 remote fetches in 8 ms
+2022-07-04 03:35:34 INFO  FileOutputCommitter:108 - File Output Committer Algorithm version is 1
+2022-07-04 03:35:34 INFO  SQLHadoopMapReduceCommitProtocol:54 - Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2022-07-04 03:35:34 INFO  FileOutputCommitter:535 - Saved output of task 'attempt_20220704033534_0013_m_000000_0' to file:/home/rahul/bcg/Case_study/output/count_male_crash.csv/_temporary/0/task_20220704033534_0013_m_000000
+2022-07-04 03:35:34 INFO  SparkHadoopMapRedUtil:54 - attempt_20220704033534_0013_m_000000_0: Committed
+2022-07-04 03:35:34 INFO  Executor:54 - Finished task 0.0 in stage 13.0 (TID 28). 2334 bytes result sent to driver
+2022-07-04 03:35:34 INFO  TaskSetManager:54 - Finished task 0.0 in stage 13.0 (TID 28) in 183 ms on localhost (executor driver) (1/1)
+2022-07-04 03:35:34 INFO  TaskSchedulerImpl:54 - Removed TaskSet 13.0, whose tasks have all completed, from pool 
+2022-07-04 03:35:34 INFO  DAGScheduler:54 - ResultStage 13 (save at NativeMethodAccessorImpl.java:0) finished in 0.214 s
+2022-07-04 03:35:34 INFO  DAGScheduler:54 - Job 12 finished: save at NativeMethodAccessorImpl.java:0, took 2.324040 s
+2022-07-04 03:35:34 INFO  FileFormatWriter:54 - Write Job 2b7ce066-4929-4460-972c-6bb46fcf0021 committed.
+2022-07-04 03:35:34 INFO  FileFormatWriter:54 - Finished processing stats for write job 2b7ce066-4929-4460-972c-6bb46fcf0021.
+2022-07-04 03:35:34 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2022-07-04 03:35:34 INFO  FileSourceStrategy:54 - Post-Scan Filters: isnotnull(PRSN_GNDR_ID#68),isnotnull(DEATH_CNT#87),(PRSN_GNDR_ID#68 = MALE),(DEATH_CNT#87 = 1)
+2022-07-04 03:35:34 INFO  FileSourceStrategy:54 - Output Data Schema: struct<PRSN_GNDR_ID: string, DEATH_CNT: int>
+2022-07-04 03:35:34 INFO  FileSourceScanExec:54 - Pushed Filters: IsNotNull(PRSN_GNDR_ID),IsNotNull(DEATH_CNT),EqualTo(PRSN_GNDR_ID,MALE),EqualTo(DEATH_CNT,1)
+2022-07-04 03:35:34 INFO  CodeGenerator:54 - Code generated in 19.202047 ms
+2022-07-04 03:35:34 INFO  CodeGenerator:54 - Code generated in 14.75774 ms
+2022-07-04 03:35:34 INFO  MemoryStore:54 - Block broadcast_27 stored as values in memory (estimated size 283.7 KB, free 364.9 MB)
+2022-07-04 03:35:34 INFO  MemoryStore:54 - Block broadcast_27_piece0 stored as bytes in memory (estimated size 23.3 KB, free 364.9 MB)
+2022-07-04 03:35:34 INFO  BlockManagerInfo:54 - Added broadcast_27_piece0 in memory on 192.168.1.10:37137 (size: 23.3 KB, free: 366.1 MB)
+2022-07-04 03:35:34 INFO  SparkContext:54 - Created broadcast 27 from count at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:34 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 10852180 bytes, open cost is considered as scanning 4194304 bytes.
+2022-07-04 03:35:34 INFO  SparkContext:54 - Starting job: count at NativeMethodAccessorImpl.java:0
+2022-07-04 03:35:34 INFO  DAGScheduler:54 - Registering RDD 61 (count at NativeMethodAccessorImpl.java:0)
+2022-07-04 03:35:34 INFO  DAGScheduler:54 - Got job 13 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2022-07-04 03:35:34 INFO  DAGScheduler:54 - Final stage: ResultStage 15 (count at NativeMethodAccessorImpl.java:0)
+2022-07-04 03:35:34 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 14)
+2022-07-04 03:35:34 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 14)
+2022-07-04 03:35:34 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 14 (MapPartitionsRDD[61] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2022-07-04 03:35:34 INFO  MemoryStore:54 - Block broadcast_28 stored as values in memory (estimated size 14.9 KB, free 364.9 MB)
+2022-07-04 03:35:34 INFO  MemoryStore:54 - Block broadcast_28_piece0 stored as bytes in memory (estimated size 7.6 KB, free 364.9 MB)
+2022-07-04 03:35:34 INFO  BlockManagerInfo:54 - Added broadcast_28_piece0 in memory on 192.168.1.10:37137 (size: 7.6 KB, free: 366.1 MB)
+2022-07-04 03:35:34 INFO  SparkContext:54 - Created broadcast 28 from broadcast at DAGScheduler.scala:1161
+2022-07-04 03:35:34 INFO  DAGScheduler:54 - Submitting 4 missing tasks from ShuffleMapStage 14 (MapPartitionsRDD[61] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+2022-07-04 03:35:34 INFO  TaskSchedulerImpl:54 - Adding task set 14.0 with 4 tasks
+2022-07-04 03:35:34 INFO  TaskSetManager:54 - Starting task 0.0 in stage 14.0 (TID 29, localhost, executor driver, partition 0, PROCESS_LOCAL, 8328 bytes)
+2022-07-04 03:35:34 INFO  TaskSetManager:54 - Starting task 1.0 in stage 14.0 (TID 30, localhost, executor driver, partition 1, PROCESS_LOCAL, 8328 bytes)
+2022-07-04 03:35:34 INFO  TaskSetManager:54 - Starting task 2.0 in stage 14.0 (TID 31, localhost, executor driver, partition 2, PROCESS_LOCAL, 8328 bytes)
+2022-07-04 03:35:34 INFO  TaskSetManager:54 - Starting task 3.0 in stage 14.0 (TID 32, localhost, executor driver, partition 3, PROCESS_LOCAL, 8328 bytes)
+2022-07-04 03:35:34 INFO  Executor:54 - Running task 0.0 in stage 14.0 (TID 29)
+2022-07-04 03:35:34 INFO  Executor:54 - Running task 3.0 in stage 14.0 (TID 32)
+2022-07-04 03:35:34 INFO  Executor:54 - Running task 1.0 in stage 14.0 (TID 30)
+2022-07-04 03:35:34 INFO  Executor:54 - Running task 2.0 in stage 14.0 (TID 31)
+2022-07-04 03:35:34 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Primary_Person_use.csv, range: 32556540-39214417, partition values: [empty row]
+2022-07-04 03:35:34 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Primary_Person_use.csv, range: 10852180-21704360, partition values: [empty row]
+2022-07-04 03:35:34 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Primary_Person_use.csv, range: 0-10852180, partition values: [empty row]
+2022-07-04 03:35:34 INFO  FileScanRDD:54 - Reading File path: file:///home/rahul/bcg/Case_study/Data/Primary_Person_use.csv, range: 21704360-32556540, partition values: [empty row]
+2022-07-04 03:35:34 INFO  CodeGenerator:54 - Code generated in 14.719167 ms
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 380
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 417
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 370
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 396
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 405
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 427
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 385
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 429
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 388
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 425
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 386
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 406
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 373
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 422
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 407
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 383
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 418
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 381
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 398
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 389
+2022-07-04 03:35:35 INFO  BlockManagerInfo:54 - Removed broadcast_24_piece0 on 192.168.1.10:37137 in memory (size: 23.3 KB, free: 366.2 MB)
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 390
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 415
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 372
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 397
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned shuffle 0
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 375
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 401
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 376
+2022-07-04 03:35:35 INFO  BlockManagerInfo:54 - Removed broadcast_25_piece0 on 192.168.1.10:37137 in memory (size: 9.6 KB, free: 366.2 MB)
+2022-07-04 03:35:35 INFO  Executor:54 - Finished task 3.0 in stage 14.0 (TID 32). 1736 bytes result sent to driver
+2022-07-04 03:35:35 INFO  TaskSetManager:54 - Finished task 3.0 in stage 14.0 (TID 32) in 762 ms on localhost (executor driver) (1/4)
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 414
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 421
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 393
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 402
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 430
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 416
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 412
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 379
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 409
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 368
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 399
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 400
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 410
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 419
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 382
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 403
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 369
+2022-07-04 03:35:35 INFO  BlockManagerInfo:54 - Removed broadcast_26_piece0 on 192.168.1.10:37137 in memory (size: 52.1 KB, free: 366.2 MB)
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 423
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 392
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 426
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 387
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 371
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 377
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 374
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 384
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 404
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 428
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 395
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 411
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 420
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 424
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 391
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 413
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 408
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 378
+2022-07-04 03:35:35 INFO  ContextCleaner:54 - Cleaned accumulator 394
+2022-07-04 03:35:35 INFO  Executor:54 - Finished task 2.0 in stage 14.0 (TID 31). 1693 bytes result sent to driver
+2022-07-04 03:35:35 INFO  TaskSetManager:54 - Finished task 2.0 in stage 14.0 (TID 31) in 842 ms on localhost (executor driver) (2/4)
+2022-07-04 03:35:35 INFO  Executor:54 - Finished task 1.0 in stage 14.0 (TID 30). 1693 bytes result sent to driver
+2022-07-04 03:35:35 INFO  TaskSetManager:54 - Finished task 1.0 in stage 14.0 (TID 30) in 845 ms on localhost (executor driver) (3/4)
+2022-07-04 03:35:35 INFO  Executor:54 - Finished task 0.0 in stage 14.0 (TID 29). 1693 bytes result sent to driver
+2022-07-04 03:35:35 INFO  TaskSetManager:54 - Finished task 0.0 in stage 14.0 (TID 29) in 852 ms on localhost (executor driver) (4/4)
+2022-07-04 03:35:35 INFO  TaskSchedulerImpl:54 - Removed TaskSet 14.0, whose tasks have all completed, from pool 
+2022-07-04 03:35:35 INFO  DAGScheduler:54 - ShuffleMapStage 14 (count at NativeMethodAccessorImpl.java:0) finished in 0.863 s
+2022-07-04 03:35:35 INFO  DAGScheduler:54 - looking for newly runnable stages
+2022-07-04 03:35:35 INFO  DAGScheduler:54 - running: Set()
+2022-07-04 03:35:35 INFO  DAGScheduler:54 - waiting: Set(ResultStage 15)
+2022-07-04 03:35:35 INFO  DAGScheduler:54 - failed: Set()
+2022-07-04 03:35:35 INFO  DAGScheduler:54 - Submitting ResultStage 15 (MapPartitionsRDD[64] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+2022-07-04 03:35:35 INFO  MemoryStore:54 - Block broadcast_29 stored as values in memory (estimated size 7.1 KB, free 365.4 MB)
+2022-07-04 03:35:35 INFO  MemoryStore:54 - Block broadcast_29_piece0 stored as bytes in memory (estimated size 3.8 KB, free 365.4 MB)
+2022-07-04 03:35:35 INFO  BlockManagerInfo:54 - Added broadcast_29_piece0 in memory on 192.168.1.10:37137 (size: 3.8 KB, free: 366.2 MB)
+2022-07-04 03:35:35 INFO  SparkContext:54 - Created broadcast 29 from broadcast at DAGScheduler.scala:1161
+2022-07-04 03:35:35 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 15 (MapPartitionsRDD[64] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2022-07-04 03:35:35 INFO  TaskSchedulerImpl:54 - Adding task set 15.0 with 1 tasks
+2022-07-04 03:35:35 INFO  TaskSetManager:54 - Starting task 0.0 in stage 15.0 (TID 33, localhost, executor driver, partition 0, ANY, 7767 bytes)
+2022-07-04 03:35:35 INFO  Executor:54 - Running task 0.0 in stage 15.0 (TID 33)
+2022-07-04 03:35:35 INFO  ShuffleBlockFetcherIterator:54 - Getting 4 non-empty blocks including 4 local blocks and 0 remote blocks
+2022-07-04 03:35:35 INFO  ShuffleBlockFetcherIterator:54 - Started 0 remote fetches in 1 ms
+2022-07-04 03:35:35 INFO  Executor:54 - Finished task 0.0 in stage 15.0 (TID 33). 1825 bytes result sent to driver
+2022-07-04 03:35:35 INFO  TaskSetManager:54 - Finished task 0.0 in stage 15.0 (TID 33) in 10 ms on localhost (executor driver) (1/1)
+2022-07-04 03:35:35 INFO  TaskSchedulerImpl:54 - Removed TaskSet 15.0, whose tasks have all completed, from pool 
+2022-07-04 03:35:35 INFO  DAGScheduler:54 - ResultStage 15 (count at NativeMethodAccessorImpl.java:0) finished in 0.018 s
+2022-07-04 03:35:35 INFO  DAGScheduler:54 - Job 13 finished: count at NativeMethodAccessorImpl.java:0, took 0.888147 s
+The number of crashes in which number of persons killed are male: 182
+2022-07-04 03:35:35 INFO  AbstractConnector:318 - Stopped Spark@159e5d62{HTTP/1.1,[http/1.1]}{0.0.0.0:4041}
+2022-07-04 03:35:35 INFO  SparkUI:54 - Stopped Spark web UI at http://192.168.1.10:4041
+2022-07-04 03:35:35 INFO  MapOutputTrackerMasterEndpoint:54 - MapOutputTrackerMasterEndpoint stopped!
+2022-07-04 03:35:35 INFO  MemoryStore:54 - MemoryStore cleared
+2022-07-04 03:35:35 INFO  BlockManager:54 - BlockManager stopped
+2022-07-04 03:35:35 INFO  BlockManagerMaster:54 - BlockManagerMaster stopped
+2022-07-04 03:35:35 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
+2022-07-04 03:35:35 INFO  SparkContext:54 - Successfully stopped SparkContext
+Successfully stopped spark session 
+2022-07-04 03:35:35 INFO  ShutdownHookManager:54 - Shutdown hook called
+2022-07-04 03:35:35 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-9c4d904a-3deb-44e0-a763-d549ac2ce925
+2022-07-04 03:35:35 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-9c4d904a-3deb-44e0-a763-d549ac2ce925/pyspark-761ea355-81a2-4b6c-ac48-e4e5106c7f95
+2022-07-04 03:35:35 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-cb8dcf2e-637b-4ce4-a781-6aa069f744c8
