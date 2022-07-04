@@ -124,8 +124,7 @@ class Vehicle_Accident_Analysis:
                      | (df.VEH_DMAG_SCL_2_ID == "DAMAGED 4") | (df.VEH_DMAG_SCL_2_ID == "DAMAGED 5") \
                      | (df.VEH_DMAG_SCL_2_ID == "DAMAGED 6") | (df.VEH_DMAG_SCL_2_ID == "DAMAGED 7 HIGHEST"))
         df = df.filter((df.DAMAGED_PROPERTY == "NONE") & (df.FIN_RESP_TYPE_ID == "PROOF OF LIABILITY INSURANCE"))
-        df = df.agg(F.countDistinct('CRASH_ID').alias('CRASH_ID_COUNT'))
-        df = df.select('CRASH_ID_COUNT')
+        df = df.dropDuplicates(["CRASH_ID"])
         utility.write_csv(df, output_path)
 
         return df.count()
@@ -161,7 +160,7 @@ class Vehicle_Accident_Analysis:
 
         utility.write_csv(df, output_path)
 
-        return df
+        return df.select('VEH_MAKE_ID').collect()
 
 
 
