@@ -27,4 +27,4 @@ def write_csv(df, file_path):
     :return: None
     """
     print("Output_is_saved_to_file_location : {}".format(file_path))
-    df.repartition(1).write.format('csv').mode('overwrite').option("header", "true").save(file_path)
+    df.write.format('csv').mode('overwrite').option("header", "true").save(file_path)

@@ -4,6 +4,8 @@ from pyspark.sql import SparkSession
 import utility
 import pyspark.sql.functions as F
 import logging
+from pyspark.sql.window import Window
+
 
 
 class Vehicle_Accident_Analysis:
@@ -48,13 +50,14 @@ class Vehicle_Accident_Analysis:
         :param output_path: output file path
         :return: state name with highest female crash
         """
-        df = self.df_primary_person.filter(df.PRSN_GNDR_ID == "FEMALE").\
+        df = self.df_primary_person.filter(self.df_primary_person.PRSN_GNDR_ID == "FEMALE").\
                 groupBy('DRVR_LIC_STATE_ID').agg(F.count('DRVR_LIC_STATE_ID')\
                 .alias("state_count"))
-        df = df.orderBy(df.state_count.desc()).head(1)
+        df = df.orderBy(df.state_count.desc()).limit(1)
+
         utility.write_csv(df, output_path)
 
-        return df[0][0]
+        return df.select('DRVR_LIC_STATE_ID').collect()[0][0]
 
     def top_vehicle_contributing_to_injuries(self, output_path):
         """
@@ -66,7 +69,7 @@ class Vehicle_Accident_Analysis:
         df = self.df_units.filter(self.df_units.VEH_MAKE_ID != "NA")
         df = df.withColumn('CASUALTIES_CNT', df.TOT_INJRY_CNT + df.DEATH_CNT)
         df = df.filter(df.CASUALTIES_CNT>0).groupby("VEH_MAKE_ID").agg(F.count("VEH_MAKE_ID").alias("VEH_MAKE_COUNT")).\
-            orderBy(df.VEH_MAKE_COUNT.desc())
+            orderBy(F.col("VEH_MAKE_COUNT").desc())
 
         df_5_to_15 = df.limit(15).subtract(df.limit(5))
         utility.write_csv(df_5_to_15, output_path)
@@ -89,7 +92,7 @@ class Vehicle_Accident_Analysis:
 
         utility.write_csv(df, output_path)
 
-        df.show(truncate=False)
+        return df.collect()
 
     def top_5_zip_codes_with_alcohols_as_reason_for_crash(self, output_path):
         """
@@ -98,14 +101,14 @@ class Vehicle_Accident_Analysis:
         :param output_path: output file path
         :return: List of Zip Codes
         """
-        df = self.df_units.join(self.df_primary_person, on=['CRASH_ID'], how='inner'). \
-            dropna(subset=["DRVR_ZIP"]). \
+        df = self.df_units.join(self.df_primary_person, on=['CRASH_ID'], how='inner')
+        df = df.dropna(subset=["DRVR_ZIP"]). \
             filter((df.CONTRIB_FACTR_1_ID.contains("ALCOHOL")) | (df.CONTRIB_FACTR_1_ID.contains("DRINKING")) | (df.CONTRIB_FACTR_2_ID.contains("ALCOHOL")) | (df.CONTRIB_FACTR_2_ID.contains("DRINKING")) | (df.CONTRIB_FACTR_P1_ID.contains("ALCOHOL")) | (df.CONTRIB_FACTR_P1_ID.contains("DRINKING"))). \
-            groupBy('DRVR_ZIP').agg(F.count('DRVR_ZIP').alias('count_column')).orderBy(F.col('count_column').desc()).show(5)
+            groupBy('DRVR_ZIP').agg(F.count('DRVR_ZIP').alias('count_column')).orderBy(F.col('count_column').desc()).limit(5)
             
         utility.write_csv(df, output_path)
 
-        return df.show(5)
+        return df.select('DRVR_ZIP').collect()
 
     def crash_ids_with_no_damage(self, output_path):
         """
@@ -121,7 +124,8 @@ class Vehicle_Accident_Analysis:
                      | (df.VEH_DMAG_SCL_2_ID == "DAMAGED 4") | (df.VEH_DMAG_SCL_2_ID == "DAMAGED 5") \
                      | (df.VEH_DMAG_SCL_2_ID == "DAMAGED 6") | (df.VEH_DMAG_SCL_2_ID == "DAMAGED 7 HIGHEST"))
         df = df.filter((df.DAMAGED_PROPERTY == "NONE") & (df.FIN_RESP_TYPE_ID == "PROOF OF LIABILITY INSURANCE"))
-        df = df.dropDuplicates(["CRASH_ID"])
+        df = df.agg(F.countDistinct('CRASH_ID').alias('CRASH_ID_COUNT'))
+        df = df.select('CRASH_ID_COUNT')
         utility.write_csv(df, output_path)
 
         return df.count()
@@ -158,6 +162,8 @@ class Vehicle_Accident_Analysis:
         utility.write_csv(df, output_path)
 
         return df
+
+
 
 
     

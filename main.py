@@ -24,7 +24,7 @@ def get_results(spark,config,args):
 
     elif (args.key == 'count_2_wheeler_crash'):
         # Q2. How many two-wheelers are booked for crashes?
-        print("The number of two-wheelers are booked for crashes :", vehicle_accident_analysis_obj.count_2_wheeler_accidents(config["output_file_path"][key]))
+        print("The number of two-wheelers are booked for crashes :", vehicle_accident_analysis_obj.count_2_wheeler_crash(config["output_file_path"][args.key]))
 
     elif (args.key == 'state_with_highest_female_accident'):
         # Q3. Which state has the highest number of crash in which females are involved?
@@ -36,12 +36,12 @@ def get_results(spark,config,args):
 
     elif (args.key == 'top_ethnic_user_group_crash_for_each_body_style'):
         # Q5. For all the body styles involved in crashes, mention the top ethnic user group of each unique body style
-        print("The body styles involved in crashes, mention the top ethnic user group of each unique body style:",vehicle_accident_analysis_obj.top_ethnic_ug_crash_for_each_body_style(config["output_file_path"][args.key]))
+        print("The body styles involved in crashes, mention the top ethnic user group of each unique body style:",vehicle_accident_analysis_obj.top_ethnic_user_group_crash_for_each_body_style(config["output_file_path"][args.key]))
 
     elif (args.key == 'top_5_zip_codes_with_alcohols_as_reason_for_crash'):
         # Q6. Among the crashed cars, what are the Top 5 Zip Codes with the highest number crashes with alcohols as the
         # contributing factor to a crash (Use Driver Zip Code)
-        print("The Top 5 Zip Codes with the highest number crashes with alcohols as CF :", vehicle_accident_analysis_obj.top_5_zip_codes_with_alcohols_as_cf_for_crash(config["output_file_path"][args.key]))
+        print("The Top 5 Zip Codes with the highest number crashes with alcohols as CF :", vehicle_accident_analysis_obj.top_5_zip_codes_with_alcohols_as_reason_for_crash(config["output_file_path"][args.key]))
 
     elif (args.key == 'crash_ids_with_no_damage'):
         # Q7. Count of Distinct Crash IDs where No Damaged Property was observed and Damage Level (VEH_DMAG_SCL~) is above 4
