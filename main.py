@@ -8,6 +8,10 @@ import Veh_Accident_analysis
 
 
 def get_argument_parse():
+    """
+    Description : Get Arguments 
+    :return : Return all run time arguments
+    """
     parser = argparse.ArgumentParser(description='Vehicle Accident Analysis BCG Gamma Case Study')
     parser.add_argument('-i','--inp_config',dest = 'config',default='config/config.json',help='Input config')
     parser.add_argument('-k','--key',required =True,help='Output keys in json')
@@ -16,6 +20,13 @@ def get_argument_parse():
 
 
 def get_results(spark,config,args):
+    """
+    Description : Get results from Module Veh_Accident_analysis
+    :param spark: spark session
+    :param config: input config file 
+    :param args: Runtime Argument
+    :return: Analysis Result
+    """
     vehicle_accident_analysis_obj = Veh_Accident_analysis.Vehicle_Accident_Analysis(spark,config)
 
     if(args.key == 'count_male'):
@@ -56,6 +67,11 @@ def get_results(spark,config,args):
 
     
 def vehicle_accident_analysis_results(args):
+    """
+    Description : Get results 
+    :param args: Runtime Argument
+    """
+
     try:
         spark = SparkSession.builder \
                     .appName('vehicle_accident_analysis_results') \
@@ -72,7 +88,7 @@ def vehicle_accident_analysis_results(args):
 
 def main():
     arguments = get_argument_parse()
-    print("Arguuments : {}".format(arguments))
+    print("Arguments : {}".format(arguments))
     vehicle_accident_analysis_results(arguments)
 
 
